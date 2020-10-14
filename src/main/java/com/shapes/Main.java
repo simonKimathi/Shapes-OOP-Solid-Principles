@@ -16,18 +16,17 @@ public class Main {
         int choice=1;
 
         System.out.println("welcome");
-        choice=scanner.nextInt();
         while(choice != 0) {
-            System.out.println("select 1 to create rectangle instance" +
-                    "1 to create rectangle instance" +
-                    "2 to create Square instance" +
-                    "3 to create Box instance" +
-                    "4 to create Cube instance" +
-                    "5 to create Ellipse instance" +
-                    "6 to create Circle instance" +
-                    "7 to create Sphere instance" +
-                    "8 to create Triangle instance" +
-                    "9 to create Tetrahedron instance" +
+            System.out.println("select 1 to create rectangle instance \n" +
+                    "1 to create rectangle instance \n" +
+                    "2 to create Square instance \n" +
+                    "3 to create Box instance \n" +
+                    "4 to create Cube instance \n" +
+                    "5 to create Ellipse instance \n" +
+                    "6 to create Circle instance \n" +
+                    "7 to create Sphere instance \n" +
+                    "8 to create Triangle instance \n" +
+                    "9 to create Tetrahedron instance \n" +
                     "0 exit");
             choice=scanner.nextInt();
                 switch (choice) {
@@ -69,6 +68,7 @@ public class Main {
                         break;
                     case 0:
                         System.out.println("Thank you for using this program");
+                        break;
                     default:
                         System.out.println("invalid Option");
                         break;
