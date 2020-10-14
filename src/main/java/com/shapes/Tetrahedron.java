@@ -4,16 +4,6 @@ import java.util.Scanner;
 
 public class Tetrahedron extends Shape implements Shape3DI { //inherits from class Shape
     private Scanner scanner;
-    private int height;
-
-    public int getHeight() {
-        return height;
-    }
-
-    public void setHeight(int height) {
-        this.height = height;
-    }
-
     public Tetrahedron() {
         scanner = new Scanner(System.in);
         prompt(scanner);
@@ -21,13 +11,15 @@ public class Tetrahedron extends Shape implements Shape3DI { //inherits from cla
 
     @Override
     public double calculateArea() {
-        return (2*(getLength()*getLength()+getWidth()*getWidth()+getHeight()*getHeight()));
+        // √3 × (Edge Length)2
+        return (2*(getLength()*getLength()+getWidth()*getWidth()));
     }
 
 
     @Override
     public double calculateVolume() {
-        return (getLength()*getWidth()*getHeight());
+        //√2/12 × (Edge Length)3
+        return (getLength()*getWidth());
     }
 
     @Override
@@ -36,8 +28,6 @@ public class Tetrahedron extends Shape implements Shape3DI { //inherits from cla
         setLength(scanner.nextInt());
         System.out.println("enter the Width  of the Box");
         setWidth(scanner.nextInt());
-        System.out.println("enter the Height  of the Box");
-        setHeight(scanner.nextInt());
     }
 
     @Override
