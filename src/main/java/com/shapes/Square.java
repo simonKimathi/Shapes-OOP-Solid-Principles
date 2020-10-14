@@ -5,10 +5,7 @@ import java.util.Scanner;
 public class Square extends Rectangle { //inherits from class Rectangle
     private Scanner scanner;
 
-    public Square() {
-        scanner = new Scanner(System.in);
-        prompt(scanner);
-    }
+
 
     @Override
     public double calculateArea() {

@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Circle  extends Shape implements Shape2DI { //inherits from class Shape
     private Scanner scanner;
 
+
     public Circle() {
         scanner = new Scanner(System.in);
         prompt(scanner);

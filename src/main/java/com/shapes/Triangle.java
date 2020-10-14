@@ -2,7 +2,7 @@ package com.shapes;
 
 import java.util.Scanner;
 
-public class Triangle extends Shape implements Shape2DI{ //inherits from class Shape
+public class Triangle extends Rectangle{ //inherits from class Shape
     private Scanner scanner;
     private int Hypotenuse;
 
@@ -14,10 +14,7 @@ public class Triangle extends Shape implements Shape2DI{ //inherits from class S
         Hypotenuse = hypotenuse;
     }
 
-    public Triangle() {
-        scanner=new Scanner(System.in);
-        prompt(scanner);
-    }
+
 
     @Override
     public double calculateArea() {

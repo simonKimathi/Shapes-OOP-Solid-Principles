@@ -6,10 +6,6 @@ public class Ellipse extends Circle { //inherits from class Circle
 
     private Scanner scanner;
 
-    public Ellipse() {
-        scanner = new Scanner(System.in);
-        prompt(scanner);
-    }
 
     @Override
     public double calculateArea() {

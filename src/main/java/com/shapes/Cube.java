@@ -5,10 +5,6 @@ import java.util.Scanner;
 public class Cube extends Box { //inherits from class box
     private Scanner scanner;
 
-    public Cube() {
-        scanner = new Scanner(System.in);
-        prompt(scanner);
-    }
 
     @Override
     public double calculateArea() {
