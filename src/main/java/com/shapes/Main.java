@@ -20,14 +20,14 @@ public class Main {
         while(choice != 0) {
             System.out.println("select 1 to create rectangle instance" +
                     "1 to create rectangle instance" +
-                    "2 to create rectangle instance" +
-                    "3 to create rectangle instance" +
-                    "4 to create rectangle instance" +
-                    "5 to create rectangle instance" +
-                    "6 to create rectangle instance" +
-                    "7 to create rectangle instance" +
-                    "8 to create rectangle instance" +
-                    "9 to create rectangle instance" +
+                    "2 to create Square instance" +
+                    "3 to create Box instance" +
+                    "4 to create Cube instance" +
+                    "5 to create Ellipse instance" +
+                    "6 to create Circle instance" +
+                    "7 to create Sphere instance" +
+                    "8 to create Triangle instance" +
+                    "9 to create Tetrahedron instance" +
                     "0 exit");
             choice=scanner.nextInt();
                 switch (choice) {

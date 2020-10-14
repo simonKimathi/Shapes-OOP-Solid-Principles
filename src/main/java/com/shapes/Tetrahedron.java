@@ -12,30 +12,26 @@ public class Tetrahedron extends Shape implements Shape3DI { //inherits from cla
     @Override
     public double calculateArea() {
         // √3 × (Edge Length)2
-        return (2*(getLength()*getLength()+getWidth()*getWidth()));
+        return (Math.cbrt(Math.pow(getLength(),2)));
     }
 
 
     @Override
     public double calculateVolume() {
         //√2/12 × (Edge Length)3
-        return (getLength()*getWidth());
+        return ((Math.sqrt(Math.pow(getLength(),3)))/12);
     }
 
     @Override
     public void prompt(Scanner scanner){
-        System.out.println("enter the Length  of the Box");
+        System.out.println("enter the Edge  of the Tetrahedron");
         setLength(scanner.nextInt());
-        System.out.println("enter the Width  of the Box");
-        setWidth(scanner.nextInt());
     }
 
     @Override
     public String toString() {
-        return "Shape type =" + "Box" +
-                " | Length =" + getLength() +
-                " | Width =" + getLength() +
-                " | Height =" + getLength() +
+        return "Shape type =" + "Tetrahedron" +
+                " | Edge =" + getLength() +
                 " | Surface Area =" + calculateArea() +
                 " | Volume =" + calculateVolume();
     }
